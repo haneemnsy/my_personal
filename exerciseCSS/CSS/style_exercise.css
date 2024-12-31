@@ -1,0 +1,54 @@
+body
+{
+	background-color: black;
+}
+h1
+{
+	text-align: center;
+	background-color: black;
+	font-family: timesnewroman;
+	font-size: 30px;
+	color: hotpink;
+}
+table, th, td, tr
+{
+	border: 3px solid transparent;
+	border-collapse: collapse;
+}
+th,td
+{
+	padding: 100px;
+}
+th
+{
+	text-align: right;
+	font-family: copperplate;
+	font-size: 25px;
+	color: yellow;
+}
+td
+{
+	text-align: center;
+	background-color: black;
+	font-family: garamond;
+	font-size: 80px;
+	color: yellow;
+}
+a:link
+		{
+			color: mediumpurple;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:visited
+		{
+			color: wheat;
+			background-color: transparent;
+			text-decoration: none;
+		}
+		a:hover, a:active
+		{
+			color: pink;
+			background-color: transparent;
+			text-decoration: underline;
+		}

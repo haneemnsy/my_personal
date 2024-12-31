@@ -1,0 +1,74 @@
+!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Javascript Exercise 8</title>
+</head>
+<body>
+
+	<h3>QUESTION 1</h3>
+
+	<p id="content1">Welcome to my page</p>
+	<button type="button" onclick='document.getElementById("content1").innerHTML="I love to learn web design"'>Change Content</button>
+
+	<h3>QUESTION 2</h3>
+
+	<p id="style1">Hello! Welcome to Faculty of Information Management</p>
+
+	<script>
+		function myStyle()
+		{
+			document.getElementById("style1").style.fontSize = "25px";
+			document.getElementById("style1").style.fontFamily = "Arial"
+			document.getElementById("style1").style.color = "pink"
+			document.getElementById("style1").style.backgroundColor = "black"
+		}
+	</script>
+
+	<button type="button" onclick="myStyle()">Change Style</button>
+
+	<h3>QUESTION 3</h3>
+
+	<script>
+		function myImage(x)
+		{
+			var img; 
+			if (x==0)
+			{
+				img="imageszz/nikialbumcv.jpg"
+			}
+			else
+			{
+				img="imageszz/nikisatu.jpg"
+			}
+			document.getElementById('image').src=img
+		}
+	</script>
+
+	<img src="imageszz/nikialbumcv.jpg" id="image" width="200" height="200">
+
+	<p>
+		<button type="button" onclick="myImage(0)">Niki</button>
+		<button type="button" onclick="myImage(1)">Buzz</button>
+	</p>
+
+	<h3>QUESTION 4</h3>
+	<p>Alert Box</p>
+
+
+	<script>
+		{
+			alert("Assalamualaikum.\nSelamat datang ke kelas IMD318\nSemoga kita beroleh ilmu bermanfaat")
+		}
+	</script>
+
+	<h3>QUESTION 5</h3>
+	<p>Map to KLCC</p>
+
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15935.20923820058!2d101.68824421623347!3d3.1468059247848847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc49d3e30988d7%3A0x464a4b7fda23c09a!2sKuala%20Lumpur%20City%20Centre%2C%20Kuala%20Lumpur%2C%20Federal%20Territory%20of%20Kuala%20Lumpur!5e0!3m2!1sen!2smy!4v1734412864144!5m2!1sen!2smy" width="800" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+
+
+</body>
+</html>
